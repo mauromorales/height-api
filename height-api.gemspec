@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   end
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.add_development_dependency 'byebug'
-  spec.add_development_dependency 'vcr'
-  spec.add_development_dependency 'webmock'
+  spec.add_development_dependency 'byebug', '~> 11.1.3'
+  spec.add_development_dependency 'vcr', '~> 6.0.0'
+  spec.add_development_dependency 'webmock', '~> 3.12.2'
 end
