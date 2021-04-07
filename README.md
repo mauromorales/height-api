@@ -53,6 +53,12 @@ You can also get a task if you know the index or id
 task = height.tasks.get(2)
 ```
 
+And update it
+
+```ruby
+updated_task = task.update('status' => 'inProgress')
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run

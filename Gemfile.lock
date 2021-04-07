@@ -39,12 +39,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug
+  byebug (~> 11.1.3)
   height-api!
   rake (~> 12.0)
   rspec (~> 3.0)
-  vcr
-  webmock
+  vcr (~> 6.0.0)
+  webmock (~> 3.12.2)
 
 BUNDLED WITH
    2.1.4

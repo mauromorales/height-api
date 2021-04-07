@@ -12,6 +12,12 @@ class Height::API::Tasks
 
       Height::Response.parse(res.body)
     end
+
+    def update_task(id_or_index, data)
+      res = Height::Request.put("tasks/#{id_or_index}", data)
+
+      Height::Response.parse(res.body)
+    end
   end
 end
 

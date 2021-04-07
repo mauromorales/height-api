@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.height.app/tasks/659ac012-9239-46f4-9cf5-6a0f382d5384
+    body:
+      encoding: UTF-8
+      string: '{"status":"inProgress"}'
+    headers:
+      Authorization:
+      - api-key <HEIGHT_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.height.app
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - https://height.app
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, app-workspaceid, app-installid, app-version
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '1617828108'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '792'
+      Etag:
+      - W/"318-AYeGA4RdrloJnRdb2g227f7HRv8"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 07 Apr 2021 20:40:47 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+    body:
+      encoding: UTF-8
+      string: '{"id":"659ac012-9239-46f4-9cf5-6a0f382d5384","model":"task","createdAt":"2021-03-31T08:43:36.017Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","deleted":false,"deletedAt":null,"deletedByUserId":null,"name":"Fetch
+        tasks in list","description":"","index":2,"assigneesIds":[],"status":"inProgress","parentTaskId":null,"listIds":["113fcfa8-e37a-4077-81a0-8ac423debd13"],"commentsAggregateCount":0,"lastActivityAt":"2021-04-07T20:40:47.457Z","completed":false,"completedAt":null,"completedByUserId":null,"orderIndex":1309764798,"subtasksIds":[],"completedSubtasksIds":[],"fields":[],"gitBranches":[],"gitPullRequests":[],"parentTasks":[],"access":"readwrite","subscribersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"redacted":null,"links":[],"url":"https://height.app/3OhlnvNYmX/T-2"}'
+  recorded_at: Wed, 07 Apr 2021 20:40:47 GMT
+- request:
+    method: put
+    uri: https://api.height.app/tasks/659ac012-9239-46f4-9cf5-6a0f382d5384
+    body:
+      encoding: UTF-8
+      string: '{"status":"inProgress"}'
+    headers:
+      Authorization:
+      - api-key <HEIGHT_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.height.app
+      Content-Length:
+      - '23'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - https://height.app
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, app-workspaceid, app-installid, app-version
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '118'
+      X-Ratelimit-Reset:
+      - '1617828108'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '792'
+      Etag:
+      - W/"318-AYeGA4RdrloJnRdb2g227f7HRv8"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 07 Apr 2021 20:40:47 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+    body:
+      encoding: UTF-8
+      string: '{"id":"659ac012-9239-46f4-9cf5-6a0f382d5384","model":"task","createdAt":"2021-03-31T08:43:36.017Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","deleted":false,"deletedAt":null,"deletedByUserId":null,"name":"Fetch
+        tasks in list","description":"","index":2,"assigneesIds":[],"status":"inProgress","parentTaskId":null,"listIds":["113fcfa8-e37a-4077-81a0-8ac423debd13"],"commentsAggregateCount":0,"lastActivityAt":"2021-04-07T20:40:47.457Z","completed":false,"completedAt":null,"completedByUserId":null,"orderIndex":1309764798,"subtasksIds":[],"completedSubtasksIds":[],"fields":[],"gitBranches":[],"gitPullRequests":[],"parentTasks":[],"access":"readwrite","subscribersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"redacted":null,"links":[],"url":"https://height.app/3OhlnvNYmX/T-2"}'
+  recorded_at: Wed, 07 Apr 2021 20:40:47 GMT
+recorded_with: VCR 6.0.0

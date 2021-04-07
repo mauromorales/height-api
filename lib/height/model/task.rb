@@ -8,5 +8,9 @@ module Height::Model
         :created_user_id, :last_activity_at, :url
       ]
     end
+
+    def update(attrs)
+      Height::API::Tasks.update_task(id, attrs)
+    end
   end
 end
