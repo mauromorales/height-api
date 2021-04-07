@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.height.app/lists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - api-key <HEIGHT_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.height.app
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - https://height.app
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, app-workspaceid, app-installid, app-version
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '1617822963'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1c49-Ii0CAyhC8ARG87J3DQFQ4GYOzuw"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 07 Apr 2021 19:15:02 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"list":[{"@changed":{},"id":"f8ef1fbe-5f2c-4718-8751-ba17984e077f","model":"list","name":"backlog","description":"All
+        the tasks currently on the backlog.","filters":{"listIds":{"values":["f8ef1fbe-5f2c-4718-8751-ba17984e077f"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"backlog","userId":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","type":"list","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","createdAt":"2021-03-31T08:02:20.259Z","updatedAt":"2021-03-31T08:02:20.756Z","updatedBy":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","defaultList":false,"url":"https://height.app/3OhlnvNYmX/backlog","topActiveUsersIds":[],"totalActiveUsersCount":0},{"@changed":{},"id":"d181950c-8af8-4580-9a81-9c7fcf5f013c","model":"list","name":"completed","description":"All
+        the tasks that have been completed, grouped by week of completion.","filters":{"completed":{"values":[true]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"},{"id":"completedAt"}],"fieldsSummaries":{"completedAt":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":{"id":"completedAt","type":"week","order":"desc"},"subviewBy":null,"visualization":"list","key":"completed","userId":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","type":"smartlist","reserved":false,"showCompletedTasks":"all","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","createdAt":"2021-03-31T08:02:20.321Z","updatedAt":"2021-03-31T08:02:20.797Z","updatedBy":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","defaultList":false,"url":"https://height.app/3OhlnvNYmX/completed","topActiveUsersIds":[],"totalActiveUsersCount":0},{"@changed":{},"id":"cc2c1a6c-3572-4588-8ecd-8d8b62f55b9b","model":"list","name":"general","description":"","filters":{"listIds":{"values":["cc2c1a6c-3572-4588-8ecd-8d8b62f55b9b"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"general","userId":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","type":"list","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","createdAt":"2021-03-31T08:02:20.210Z","updatedAt":"2021-03-31T08:02:20.710Z","updatedBy":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","defaultList":true,"url":"https://height.app/3OhlnvNYmX/general","topActiveUsersIds":[],"totalActiveUsersCount":0},{"@changed":{},"id":"3b03e76e-b90e-4378-95d5-a854a6d00332","model":"list","name":"inbox","description":"","filters":{},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":{"id":"listIds"},"subviewBy":null,"visualization":"conversation","key":"inbox","userId":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","type":"inbox","reserved":true,"showCompletedTasks":"all","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"flat","createdAt":"2021-03-31T08:02:20.351Z","updatedAt":"2021-03-31T08:02:20.811Z","updatedBy":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","defaultList":false,"url":"https://height.app/3OhlnvNYmX/inbox","topActiveUsersIds":[],"totalActiveUsersCount":0},{"@changed":{},"id":"acca5964-c70a-4274-a668-b10a0fad0d9d","model":"list","name":"in-progress","description":"All
+        the tasks people are currently working on.","filters":{"status":{"values":["inProgress"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":{"id":"assigneesIds","order":"default"},"subviewBy":null,"visualization":"list","key":"in-progress","userId":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","type":"smartlist","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","createdAt":"2021-03-31T08:02:20.294Z","updatedAt":"2021-03-31T08:02:20.777Z","updatedBy":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","defaultList":false,"url":"https://height.app/3OhlnvNYmX/in-progress","topActiveUsersIds":[],"totalActiveUsersCount":0},{"@changed":{},"id":"e3e1b3f2-f2de-4e0f-a0bb-452a2c1e28be","model":"list","name":"mauro","description":"","filters":{"assigneesIds":{"values":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"user/mauro","userId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","type":"user","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[{"userId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","access":"readwrite"}]},"subtaskMode":"expanded","hierarchyMode":"tree","createdAt":"2021-03-31T08:02:20.450Z","updatedAt":"2021-03-31T08:15:00.909Z","updatedBy":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","defaultList":false,"url":"https://height.app/3OhlnvNYmX/user/mauro","topActiveUsersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"totalActiveUsersCount":1},{"@changed":{},"id":"113fcfa8-e37a-4077-81a0-8ac423debd13","model":"list","name":"ruby-height-api","description":"Development
+        of the ruby HEIGHT API","filters":{"listIds":{"values":["113fcfa8-e37a-4077-81a0-8ac423debd13"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"ruby-height-api","userId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","type":"list","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","appearance":{"icon":"list","iconUrl":"https://statics.height.app/assets/icon-list.SX32JCHJ.svg","hue":null},"createdAt":"2021-03-31T08:03:35.344Z","updatedAt":"2021-04-07T19:15:00.431Z","updatedBy":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","defaultList":false,"url":"https://height.app/3OhlnvNYmX/ruby-height-api","topActiveUsersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"totalActiveUsersCount":1}]}'
+  recorded_at: Wed, 07 Apr 2021 19:15:02 GMT
+recorded_with: VCR 6.0.0
