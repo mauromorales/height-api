@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+- Fixes loading order when requiring this gem
+
 ## 0.0.2
 
 - Update task
