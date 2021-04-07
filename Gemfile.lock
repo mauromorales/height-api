@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    height-api (0.0.1)
+    height-api (0.0.3)
 
 GEM
   remote: https://rubygems.org/
