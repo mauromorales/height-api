@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.height.app/activities?taskId=659ac012-9239-46f4-9cf5-6a0f382d5384
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - api-key <HEIGHT_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.height.app
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - https://height.app
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, app-workspaceid, app-installid, app-version
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '1618061180'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e28-vTW/afsuLa+G8cBqSW4sYeWmV8c"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sat, 10 Apr 2021 13:25:19 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"list":[{"id":"3eb978a8-1e2c-475c-8306-35bddf8a442f","model":"activity","createdAt":"2021-03-31T08:43:36.017Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","lastEditedAt":null,"deleted":false,"type":"createdAt","fieldTemplateId":null,"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384","message":null,"oldValue":null,"newValue":null,"valueStatus":null,"reactjis":[],"readUserIds":[],"attachments":[],"pinned":false,"pinnedUserId":null,"pinnedAt":null,"quote":null,"redacted":null,"url":"https://height.app/3OhlnvNYmX/T-2#3eb978a8-1e2c-475c-8306-35bddf8a442f"},{"id":"b30b3879-383f-4c43-b20f-61662ece69ff","model":"activity","createdAt":"2021-03-31T08:43:55.380Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","lastEditedAt":null,"deleted":false,"type":"nameChange","fieldTemplateId":null,"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384","message":null,"oldValue":"","newValue":"Fetch
+        tasks in list","valueStatus":null,"reactjis":[],"readUserIds":[],"attachments":[],"pinned":false,"pinnedUserId":null,"pinnedAt":null,"quote":null,"redacted":null,"url":"https://height.app/3OhlnvNYmX/T-2#b30b3879-383f-4c43-b20f-61662ece69ff"},{"id":"556fae75-a357-4f74-90c2-2bd893613031","model":"activity","createdAt":"2021-04-07T20:40:47.457Z","createdUserId":"89a5d900-f7c6-4211-b967-37530208a449","lastEditedAt":null,"deleted":false,"type":"statusChange","fieldTemplateId":null,"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384","message":null,"oldValue":"backLog","newValue":"inProgress","valueStatus":null,"reactjis":[],"readUserIds":[],"attachments":[],"pinned":false,"pinnedUserId":null,"pinnedAt":null,"quote":null,"redacted":null,"url":"https://height.app/3OhlnvNYmX/T-2#556fae75-a357-4f74-90c2-2bd893613031"},{"id":"fc8e5e14-719e-4967-98f7-735082d4fa83","model":"activity","createdAt":"2021-04-07T20:41:47.540Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","lastEditedAt":null,"deleted":false,"type":"statusChange","fieldTemplateId":null,"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384","message":null,"oldValue":"inProgress","newValue":"backLog","valueStatus":null,"reactjis":[],"readUserIds":[],"attachments":[],"pinned":false,"pinnedUserId":null,"pinnedAt":null,"quote":null,"redacted":null,"url":"https://height.app/3OhlnvNYmX/T-2#fc8e5e14-719e-4967-98f7-735082d4fa83"},{"id":"415f1bae-e63a-436d-b17b-3a8a18825746","model":"activity","createdAt":"2021-04-10T13:14:44.171Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","lastEditedAt":null,"deleted":false,"type":"description","fieldTemplateId":null,"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384","message":"Having
+        a list object, I''d like to be able to retrieve all its tasks","oldValue":null,"newValue":null,"valueStatus":null,"reactjis":[],"readUserIds":[],"attachments":[],"pinned":false,"pinnedUserId":null,"pinnedAt":null,"quote":null,"unfurls":[],"redacted":null,"url":"https://height.app/3OhlnvNYmX/T-2#415f1bae-e63a-436d-b17b-3a8a18825746"},{"id":"45ee350a-39d8-4f69-b6bd-8cb0e6c62682","model":"activity","createdAt":"2021-04-10T13:15:42.510Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","lastEditedAt":null,"deleted":false,"type":"comment","fieldTemplateId":null,"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384","message":"The
+        API should be `list.tasks`","oldValue":null,"newValue":null,"valueStatus":null,"reactjis":[],"readUserIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"attachments":[],"pinned":false,"pinnedUserId":null,"pinnedAt":null,"quote":null,"unfurls":[],"redacted":null,"url":"https://height.app/3OhlnvNYmX/T-2#45ee350a-39d8-4f69-b6bd-8cb0e6c62682"}],"metadata":{"taskId":"659ac012-9239-46f4-9cf5-6a0f382d5384"}}'
+  recorded_at: Sat, 10 Apr 2021 13:25:19 GMT
+recorded_with: VCR 6.0.0

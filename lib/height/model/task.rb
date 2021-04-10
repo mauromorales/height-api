@@ -1,5 +1,7 @@
 module Height::Model
   class Task < Base
+    include Enumerable
+
     def attributes
       [
         :id, :index, :list_ids, :name, :description, :status,
@@ -11,6 +13,18 @@ module Height::Model
 
     def update(attrs)
       Height::API::Tasks.update_task(id, attrs)
+    end
+
+    def activities
+      query = {
+        "taskId" => [id]
+      }
+
+      Height::API::Activities.list(query)
+    end
+
+    def comments
+      activities.select { |activity| activity.type == 'comment' }
     end
   end
 end
