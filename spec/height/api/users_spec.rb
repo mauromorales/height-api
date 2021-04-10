@@ -10,6 +10,7 @@ RSpec.describe Height::API::Users do
         expect(lists.count).to eq(3)
         expect(lists.items[1]).to be_a(Height::Model::User)
         expect(lists.items[1].username).to eq('mauro')
+        expect(lists.items[1].id).to eq('dce0f9d3-351d-4111-9b2b-bead9b7fff4e')
       end
     end
   end
