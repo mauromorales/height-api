@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.height.app/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - api-key <HEIGHT_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.height.app
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - https://height.app
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, app-workspaceid, app-installid, app-version
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '1618089868'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"477-lGSmreWRn+wuCQew6Nf510liC9g"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sat, 10 Apr 2021 21:23:27 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"list":[{"createdAt":"2021-03-31T08:02:20.382Z","id":"89a5d900-f7c6-4211-b967-37530208a449","model":"user","hue":292,"auth":[],"pictureUrl":"https://height-files.storage.googleapis.com/avatar-bot.png","key":"AB","access":"member","admin":false,"botType":"api","deleted":false,"state":"enabled","email":"apibot@height.app","username":"apibot","firstname":"API","lastname":"Bot"},{"createdAt":"2021-03-31T08:02:20.129Z","id":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","model":"user","hue":106,"auth":["email"],"pictureUrl":"https://height-files.storage.googleapis.com/3988626c-2657-4355-9164-4d4e12c1e272.jpg","key":"MM","access":"member","admin":true,"deleted":false,"state":"enabled","email":"mauro@listminut.com","username":"mauro","firstname":"Mauro","lastname":"M"},{"createdAt":"2021-03-31T08:02:20.144Z","id":"f8eb5b62-cddb-4559-8f4c-fb208902c6bb","model":"user","hue":197,"auth":[],"pictureUrl":"https://height-files.storage.googleapis.com/avatar-bot.png","key":"HB","access":"member","admin":false,"botType":"height","deleted":false,"state":"enabled","email":"bot@height.app","username":"heightbot","firstname":"Height","lastname":"Bot"}]}'
+  recorded_at: Sat, 10 Apr 2021 21:23:27 GMT
+recorded_with: VCR 6.0.0

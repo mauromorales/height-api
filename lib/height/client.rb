@@ -6,4 +6,8 @@ class Height::Client
   def tasks
     Height::API::Tasks
   end
+
+  def users
+    Height::API::Users
+  end
 end

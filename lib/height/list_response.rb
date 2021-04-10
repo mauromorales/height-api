@@ -10,6 +10,8 @@ class Height::ListResponse
     end
   end
 
+  attr_reader :items
+
   def initialize(items)
     @items = items
   end
@@ -24,5 +26,9 @@ class Height::ListResponse
 
   def each(&block)
     @items.each(&block)
+  end
+
+  def last
+    @items.last
   end
 end

@@ -2,6 +2,7 @@ require 'height/model/base'
 require 'height/model/activity'
 require 'height/model/list'
 require 'height/model/task'
+require 'height/model/user'
 
 module Height::Model
   def self.for(attrs)
