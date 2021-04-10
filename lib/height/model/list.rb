@@ -1,7 +1,7 @@
 module Height::Model
   class List < Base
     def attributes
-      [:id, :type, :key, :description, :url, :appearence]
+      [:id, :type, :key, :description, :url, :appearance]
     end
 
     def tasks
