@@ -30,4 +30,18 @@ RSpec.describe Height::API::Tasks do
       end
     end
   end
+
+  describe '.search' do
+    context 'with includes statement' do
+      it 'is successful' do
+        VCR.use_cassette('tasks_search_include') do
+          height = Height.new
+          list = height.tasks.search({}, ['Lists'])
+
+          expect(list).to be_a(Height::ListResponse)
+          expect(list.first.lists.first.key).to eq('ruby-height-api')
+        end
+      end
+    end
+  end
 end

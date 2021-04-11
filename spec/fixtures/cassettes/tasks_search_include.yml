@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.height.app/tasks?filters=%7B%7D&include=%5B%22Lists%22%5D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - api-key <HEIGHT_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.height.app
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - https://height.app
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, app-workspaceid, app-installid, app-version
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '1618145870'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"17af-r0y7C8GtsMHoDqKK7mkQ3dX3tuA"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 11 Apr 2021 12:56:49 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"list":[{"id":"f791680d-66ee-434a-8d4e-519c6f12181d","model":"task","createdAt":"2021-03-31T08:43:55.419Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","deleted":false,"deletedAt":null,"deletedByUserId":null,"name":"Fetch
+        comments in task","description":"","index":3,"assigneesIds":[],"status":"backLog","parentTaskId":null,"listIds":["113fcfa8-e37a-4077-81a0-8ac423debd13"],"commentsAggregateCount":0,"lastActivityAt":"2021-04-10T13:19:35.087Z","completed":false,"completedAt":null,"completedByUserId":null,"orderIndex":1728624172,"subtasksIds":[],"completedSubtasksIds":[],"fields":[],"gitBranches":[],"gitPullRequests":[],"parentTasks":[],"access":"readwrite","subscribersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"redacted":null,"links":[],"url":"https://height.app/3OhlnvNYmX/T-3","lists":[{"@changed":{},"id":"113fcfa8-e37a-4077-81a0-8ac423debd13","model":"view","name":"ruby-height-api","description":"Development
+        of the ruby HEIGHT API","filters":{"listIds":{"values":["113fcfa8-e37a-4077-81a0-8ac423debd13"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"ruby-height-api","userId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","type":"list","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","appearance":{"icon":"list","iconUrl":"https://statics.height.app/assets/icon-list.SX32JCHJ.svg","hue":null},"createdAt":"2021-03-31T08:03:35.344Z","updatedAt":"2021-04-10T13:30:01.255Z","updatedBy":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","defaultList":false,"url":"https://height.app/3OhlnvNYmX/ruby-height-api","topActiveUsersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"totalActiveUsersCount":1}]},{"id":"659ac012-9239-46f4-9cf5-6a0f382d5384","model":"task","createdAt":"2021-03-31T08:43:36.017Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","deleted":false,"deletedAt":null,"deletedByUserId":null,"name":"Fetch
+        tasks in list","description":"Having a list object, I''d like to be able to
+        retrieve all its tasks","index":2,"assigneesIds":[],"status":"backLog","parentTaskId":null,"listIds":["113fcfa8-e37a-4077-81a0-8ac423debd13"],"commentsAggregateCount":2,"lastActivityAt":"2021-04-10T13:15:42.510Z","completed":false,"completedAt":null,"completedByUserId":null,"orderIndex":1309764798,"subtasksIds":[],"completedSubtasksIds":[],"fields":[],"gitBranches":[],"gitPullRequests":[],"parentTasks":[],"access":"readwrite","subscribersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"redacted":null,"links":[],"url":"https://height.app/3OhlnvNYmX/T-2","lists":[{"@changed":{},"id":"113fcfa8-e37a-4077-81a0-8ac423debd13","model":"view","name":"ruby-height-api","description":"Development
+        of the ruby HEIGHT API","filters":{"listIds":{"values":["113fcfa8-e37a-4077-81a0-8ac423debd13"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"ruby-height-api","userId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","type":"list","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","appearance":{"icon":"list","iconUrl":"https://statics.height.app/assets/icon-list.SX32JCHJ.svg","hue":null},"createdAt":"2021-03-31T08:03:35.344Z","updatedAt":"2021-04-10T13:30:01.255Z","updatedBy":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","defaultList":false,"url":"https://height.app/3OhlnvNYmX/ruby-height-api","topActiveUsersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"totalActiveUsersCount":1}]},{"id":"27d35940-b6ae-4e57-8a28-ccfdf816441e","model":"task","createdAt":"2021-03-31T08:43:23.058Z","createdUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","deleted":false,"deletedAt":null,"deletedByUserId":null,"name":"Fetch
+        all lists","description":"","index":1,"assigneesIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"status":"done","parentTaskId":null,"listIds":["113fcfa8-e37a-4077-81a0-8ac423debd13"],"commentsAggregateCount":0,"lastActivityAt":"2021-03-31T08:44:04.260Z","completed":true,"completedAt":"2021-03-31T08:44:04.255Z","completedByUserId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","orderIndex":472046050,"subtasksIds":[],"completedSubtasksIds":[],"fields":[],"gitBranches":[],"gitPullRequests":[],"parentTasks":[],"access":"readwrite","subscribersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"redacted":null,"links":[],"url":"https://height.app/3OhlnvNYmX/T-1","lists":[{"@changed":{},"id":"113fcfa8-e37a-4077-81a0-8ac423debd13","model":"view","name":"ruby-height-api","description":"Development
+        of the ruby HEIGHT API","filters":{"listIds":{"values":["113fcfa8-e37a-4077-81a0-8ac423debd13"]}},"fields":[{"id":"name"},{"id":"status"},{"id":"assigneesIds"},{"id":"listIds"}],"fieldsSummaries":{"name":{"type":"count"}},"sectionsSummaries":{},"sortBy":{"type":"manual","sort":"global"},"viewBy":null,"subviewBy":null,"visualization":"list","key":"ruby-height-api","userId":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","type":"list","reserved":false,"showCompletedTasks":"none","showCompletedTasksCustomFilter":null,"restricted":false,"permissions":{"membersPermission":true,"userPermissions":[]},"subtaskMode":"expanded","hierarchyMode":"tree","appearance":{"icon":"list","iconUrl":"https://statics.height.app/assets/icon-list.SX32JCHJ.svg","hue":null},"createdAt":"2021-03-31T08:03:35.344Z","updatedAt":"2021-04-10T13:30:01.255Z","updatedBy":"dce0f9d3-351d-4111-9b2b-bead9b7fff4e","defaultList":false,"url":"https://height.app/3OhlnvNYmX/ruby-height-api","topActiveUsersIds":["dce0f9d3-351d-4111-9b2b-bead9b7fff4e"],"totalActiveUsersCount":1}]}]}'
+  recorded_at: Sun, 11 Apr 2021 12:56:49 GMT
+recorded_with: VCR 6.0.0

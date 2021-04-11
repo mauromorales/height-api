@@ -11,6 +11,10 @@ module Height::Model
       ]
     end
 
+    def related_models
+      [ :lists ]
+    end
+
     def update(attrs)
       Height::API::Tasks.update_task(id, attrs)
     end

@@ -1,7 +1,10 @@
 class Height::API::Tasks
   class << self
-    def search(filter)
+    def search(filter, incl = nil)
       query = { 'filters' => filter.to_json }
+
+      query.merge!({ 'include' => incl.to_json }) if incl
+
       res = Height::Request.get('tasks', query)
 
       Height::ListResponse.parse(res.body)

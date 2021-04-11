@@ -8,6 +8,11 @@ class Height::ListResponse
 
       new(items)
     end
+
+    def build(ary)
+      items = ary.map { |item| Height::Model.for(item) }
+      new(items)
+    end
   end
 
   attr_reader :items
