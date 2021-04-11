@@ -7,7 +7,6 @@ module Height::Model
 
       self.attributes.each do |name|
         key = inflector.camelize_lower(name.to_s)
-        next unless attrs[key]
 
         self.instance_variable_set("@#{name}", attrs[key])
         define_singleton_method(name) do
